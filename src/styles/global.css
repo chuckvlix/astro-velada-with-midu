@@ -1,1 +1,7 @@
 @import "tailwindcss";
+@import 'tailwind-animations';
+
+@theme {
+  --color-primary: #333;
+  --color-secondary: #ddd;
+}

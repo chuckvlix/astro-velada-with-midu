@@ -1,10 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Hero from '../sections/Hero.astro'
+import PrincipalDate from '../sections/PrincipalDate.astro'
+import Info from '../sections/Info.astro'
+import Countdown from '../sections/Countdown.astro'
+import Footer from '../sections/Footer.astro'
 ---
 
-<Layout>
-	<main></main>
+<Layout title="La Velada IV">
+	<Hero />
+	<main>
+		<PrincipalDate />
+		<Info />
+		<Countdown />
+	</main>
+	<Footer />
 </Layout>
