@@ -2,6 +2,36 @@
 @import 'tailwind-animations';
 
 @theme {
-  --color-primary: #333;
-  --color-secondary: #ddd;
+  --color-primary: #ddd;
+  --color-secondary: #333;
+
+  --background-color: #222;
+  --background-twitch: var(--color-twitch-ice);
+
+  --color-twitch: #9146ff;
+  --color-twitch-ice: #f0f0ff;
+
+  --font-covered: 'CoveredByYourGrace', 'cursive';
+}
+
+@font-face {
+  font-family: CoveredByYourGrace;
+  src: url('/fonts/CoveredByYourGrace-Regular.woff2') format('woff2');
+}
+
+html {
+  font-family: 'Jost Variable', sans-serif;
+  background: #101010;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  position: relative;
+}
+
+.font-covered {
+  font-weight: bolder;
+  font-style: italic;
 }
