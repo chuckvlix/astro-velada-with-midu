@@ -1,0 +1,68 @@
+---
+const SPONSORS = [
+  {
+    id: "alsa",
+    name: "Alsa",
+    url: "https://alsa.es",
+  },
+  {
+    id: "cerave",
+    name: "Cerave",
+    url: "https://cerave.es",
+  },
+  {
+    id: "el-pozo",
+    name: "El Pozo",
+    url: "https://elpozo.com",
+  },
+  {
+    id: "grefusa",
+    name: "Grefusa",
+    url: "https://grefusa.com",
+  },
+  {
+    id: "maxibon",
+    name: "Maxibon",
+    url: "https://maxibon.es",
+  },
+  {
+    id: "prime",
+    name: "Prime",
+    url: "https://drinkprime.com/",
+  },
+  {
+    id: "revolut",
+    name: "Revolut",
+    url: "https://revolut.com",
+  },
+  {
+    id: "spotify",
+    name: "Spotify",
+    url: "https://spotify.com",
+  },
+  {
+    id: "vicio",
+    name: "Vicio",
+    url: "https://www.ganasdevicio.com/",
+  },
+];
+---
+
+<section class="my-40">
+  <h3 class="font-covered text-5xl text-primary uppercase text-center">Patrocinadores</h3>
+  <p class="mt-2 text-xl text-primary text-center">La Velada puede llevarse a cabo gracias a la colaboración de ..</p>
+
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-8 mt-12">
+    {SPONSORS.map(({ id, name, url }) => (
+      <a
+        class="group flex justify-center items-center h-24 bg-linear-to-b from-white/10 via-transparent to-transparent hover:from-white/20 md:h-32"
+        title={`Visita la página del patrocinador ${name}`}
+        href={url} target="_blank" rel="noopener noreferrer"
+      >
+        <img
+          loading="lazy" src={`/sponsors/${id}.svg`} alt={`${name} logo`}
+          class="w-24 h-auto group-hover:scale-110 transition" />
+      </a>
+    ))}
+  </div>
+</section>
